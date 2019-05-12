@@ -45,8 +45,6 @@ typings/
 
 # Optional npm cache directory
 .npm
-
-# Optional eslint cache
 .eslintcache
 
 # Optional REPL history
@@ -82,3 +80,6 @@ typings/
 
 # DynamoDB Local files
 .dynamodb/
+
+# Ecosystem
+ecosystem.config.js

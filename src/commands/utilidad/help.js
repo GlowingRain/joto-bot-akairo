@@ -79,7 +79,7 @@ class HelpCommand extends Command {
         };
 
         return message.author.send({ embed }).catch(() => {
-            return errorMessage('No puedo enviar los comandos a tus mensajes privados, revisa tus opciones de privacidad.')
+            return errorMessage('No puedo enviar los comandos a tus mensajes privados, revisa tus opciones de privacidad.', message);
         });
     }
 }

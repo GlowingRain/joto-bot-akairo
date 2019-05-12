@@ -11,7 +11,12 @@ class SuggestCommand extends Command {
                 {
                     id: 'content',
                     type: Argument.range('string', 15, 1024),
-                    match: 'content'
+                    match: 'text'
+                },
+                {
+                    id: 'video',
+                    match: 'flag',
+                    flag: '--video'
                 }
             ],
             cooldown: 120000,
@@ -38,7 +43,12 @@ class SuggestCommand extends Command {
             .addBlankField(true)
             .addField(":bulb: Sugerencia:", args.content);
 
-        message.delete().catch(() => o_O);
+        if (args.video) {
+            suggestembed.setTitle('NUEVA SUGERENCIA - VIDEO');
+            suggestembed.setColor("YELLOW")
+        }
+
+        message.delete();
         message.channel.send(`✅ | ${message.author} | **Tu sugerencia se ha enviado con éxito.**`).then(
             SuggestChannel.send(suggestembed)
         ).then(m => m.delete({ timeout: 10000 }));

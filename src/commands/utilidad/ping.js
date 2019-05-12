@@ -1,6 +1,5 @@
 const { Command } = require('discord-akairo');
 const { MessageEmbed } = require('discord.js');
-const { ws } = require('discord.js');
 
 class PingCommand extends Command {
     constructor() {

@@ -23,7 +23,8 @@ class EvalCommand extends Command {
 
             let embed = new Discord.MessageEmbed()
                 .setColor('RANDOM')
-                .addField(':outbox_tray: Salida', `\`\`\`js\n${code}\`\`\``);
+                .setTitle('📥 Salida')
+                .setDescription(`\`\`\`js\n${code}\`\`\``);
             
             if (code.length > 2000) {
                 hastebin(code, "js").then(r => {

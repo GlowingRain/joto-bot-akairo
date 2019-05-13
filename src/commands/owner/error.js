@@ -4,12 +4,13 @@ class errorCommand extends Command {
     constructor() {
         super('error', {
             aliases: ['error'],
-            ownerOnly: true
+            ownerOnly: true,
+            prefix: '>>'
         })
     }
 
     exec(message) {
-        message.chanel.send('Wow.');
+        throw new Error('An error has occured.');
     }
 }
 

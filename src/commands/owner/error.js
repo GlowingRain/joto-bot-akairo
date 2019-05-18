@@ -9,8 +9,8 @@ class errorCommand extends Command {
         })
     }
 
-    exec(message) {
-        throw new Error('An error has occured.');
+    exec() {
+        throw new Error('Si ves esto, es porque se ha producido un error solicitado.');
     }
 }
 

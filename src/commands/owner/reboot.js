@@ -23,7 +23,7 @@ class RebootCommand extends Command {
                 .setDescription(`Reinicio programado para dentro de **${prettyMs(args.time)}**`);
 
             message.channel.send(timedEmbed)
-            setTimeout(() => { process.exit(1); }, args.time);
+            return setTimeout(() => { process.exit(1); }, args.time);
         }
 
         let normalEmbed = this.client.util.embed()
@@ -31,7 +31,7 @@ class RebootCommand extends Command {
             .setDescription('Se va a realizar un reinicio dentro de **3 segundos**...');
 
         message.channel.send(normalEmbed);
-        setTimeout(() => { process.exit(1); }, 3000);
+        return setTimeout(() => { process.exit(1); }, 3000);
     }
 }
 

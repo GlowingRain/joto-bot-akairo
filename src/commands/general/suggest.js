@@ -19,6 +19,7 @@ class SuggestCommand extends Command {
                     flag: '--video'
                 }
             ],
+            description: 'Sugiere algo para el servidor, o para el bot.',
             cooldown: 120000,
             channel: 'guild'
         })

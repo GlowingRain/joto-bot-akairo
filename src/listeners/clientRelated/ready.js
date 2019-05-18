@@ -17,7 +17,7 @@ class ReadyListener extends Listener {
         let log = `${timestamp} | ${chalk.green('READY')} | ${chalk.blue(this.client.user.tag)} está online junto a ${chalk.red(this.client.users.size)} usuarios.`;
         
         // Status - Activity
-        this.client.user.setActivity('INESTABLE (ACTUALIZANDO) | v3.0.0', { type: 'PLAYING' });
+        this.client.user.setActivity('v3.0.0', { type: 'PLAYING' });
 
         console.log(log);
     }

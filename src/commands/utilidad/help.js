@@ -45,7 +45,7 @@ class HelpCommand extends Command {
                 const cmd = this.handler.modules.get(key);
 
                 embed.setTitle(`${cmd.id.toTitleCaseAll()}`);
-                embed.setDescription(`${cmd.description.content}`);
+                embed.setDescription(`${cmd.description}`);
 
                 if (cmd.aliases) {
                     embed.addField('Aliases', `\`${cmd.aliases.join(', ')}\``, true);

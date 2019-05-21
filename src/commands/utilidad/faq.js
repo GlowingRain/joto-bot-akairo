@@ -36,7 +36,7 @@ class FAQCommand extends Command {
 
     exec(message, args) {
         if (args.questions) {
-            let result = Values.questions.responses[args.questions];
+            let result = Values.questions.responses[args.questions.toLowerCase()];
             if (result === undefined) return null;
             let nEmbed = this.client.util.embed()
                 .setTitle('⚜ ' + args.questions.toUpperCase())

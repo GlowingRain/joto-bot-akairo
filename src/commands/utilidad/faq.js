@@ -29,7 +29,8 @@ class FAQCommand extends Command {
                         retry: 'No se ha encontrado algo parecido a eso.'
                     }
                 }
-            ]
+            ],
+            channel: 'guild'
         })
     }
 

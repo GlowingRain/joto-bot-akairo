@@ -8,7 +8,7 @@ module.exports = {
             "flood": "Ningún tipo de flood está permitido, desde cadenas hasta frases sin sentido alguno.",
             "exploit": "Abusar/Exploitear de los servicios del servidor está prohibido. Ej.: El abusar del sistema de XP, el uso de multicuentas al ser baneado en la cuenta principal, también destacando el abusar de un rol, entre otros.",
             "pacman": "El pacman está permitido siempre y cuando no se use en exceso.",
-            "n-word": "La palabra con N en su versión inglesa está totalmente prohibida debido a que formamos y tenemos un **servidor socio** (partner) con Discord, por lo que debemos apegarnos al **Código de Conducta ded Partnership** y las **Directivas de la Comunidad**, tanto como los **Términos y Condiciones** del mismo servicio."
+            "n-word": "La palabra con N en su versión inglesa está totalmente prohibida debido a que formamos y tenemos un **servidor socio** (partner) con Discord, por lo que debemos apegarnos al **Código de Conducta del Partnership** y las **Directivas de la Comunidad**, tanto como los **Términos y Condiciones** del mismo servicio."
         }
     },
 }

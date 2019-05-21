@@ -26,24 +26,6 @@ class JotoBot extends AkairoClient {
             // Default prompts
             argumentDefaults: {
                 prompt: {
-                    modifyStart: (text, message) => {
-                        const embed = new Discord.MessageEmbed()
-                            .setColor(colors['blue'])
-                            .setAuthor(message.author.tag, `${message.author.avatarURL || 'https://discordapp.com/assets/dd4dbc0016779df1378e7812eabaa04d.png'}`)
-                            .setDescription(text)
-                            .setFooter("Escribe 'cancelar' para cancelar este comando.");
-
-                        return { embed };
-                    },
-                    modifyRetry: (text, message) => {
-                        const embed = new Discord.MessageEmbed()
-                            .setColor(colors['yellow'])
-                            .setAuthor(message.author.tag, `${message.author.avatarURL || 'https://discordapp.com/assets/dd4dbc0016779df1378e7812eabaa04d.png'}`)
-                            .setDescription(text)
-                            .setFooter("Escribe 'cancelar' para cancelar este comando.");
-
-                        return { embed };
-                    },
                     timeout: 'El tiempo se agotó, el comando ha sido cancelado.',
                     ended: 'Muchos intentos, el comando ha sido cancelado.',
                     cancel: 'El comando ha sido cancelado.',
